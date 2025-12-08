@@ -5,5 +5,8 @@
 }
 
 :root {
-  
+  --color-dark: #0D0D1B;
+  --color-blue: #4D81E7;
+
+  --font-family-title: "Inter", sans-serif;
 }
