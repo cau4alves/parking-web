@@ -1,8 +1,0 @@
-header {
-    font-family: var(--font-family-title);
-}
-
-header span {
-    color: var(--color-blue);
-    cursor: pointer;
-}

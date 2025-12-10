@@ -1,14 +1,20 @@
-import './App.css'
-import { Header } from './components/header'
-import { Login } from './components/login'
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import ActiveCars from "./pages/ActiveCars";
+import RegisterEntry from "./pages/RegisterEntry";
+import RegisterExit from "./pages/RegisterExit";
+
+export default function App() {
   return (
-    <>
-       <Header />
-       <Login />
-    </>
-  )
-}
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
 
-export default App
+      <Route path="/active-cars" element={<ActiveCars />} />
+      <Route path="/register-entry" element={<RegisterEntry />} />
+      <Route path="/register-exit" element={<RegisterExit />} />
+    </Routes>
+  );
+}

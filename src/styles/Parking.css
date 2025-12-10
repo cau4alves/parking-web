@@ -1,0 +1,55 @@
+.screen-container {
+  width: 100vw;
+  height: 100vh;
+  background: #0d0d1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen-box {
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 260px;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.car-card {
+  width: 260px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: left;
+  margin: 10px auto;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.yellow-btn {
+  background: #f5d469;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.yellow-btn:hover {
+  background: #eac55c;
+}
