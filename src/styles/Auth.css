@@ -1,58 +1,103 @@
-.auth-container {
-  width: 100vw;
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garanta que NÃO tenha vírgula aqui */
+}
+
+body {
+  /* Fundo escuro global */
+  background-color: #0D0D1B;
+  /* Fonte forçada para Inter ou qualquer sans-serif */
+  font-family: 'Inter', sans-serif;
+  color: white;
   height: 100vh;
-  background: var(--color-dark);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* CONTAINER DO LOGIN */
 .auth-box {
+  width: 100%;
+  max-width: 350px;
   text-align: center;
-  color: white;
+  padding: 20px;
 }
 
+/* TÍTULOS */
 h2 {
+  font-size: 24px;
+  font-weight: 600;
   margin-bottom: 8px;
+  font-family: 'Inter', sans-serif; /* Forçando a fonte no título */
 }
 
+/* TEXTO "Don't have an account?" */
 .switch-text {
   color: #cccccc;
-  margin-bottom: 20px;
+  font-size: 14px;
+  margin-bottom: 30px;
 }
 
+.switch-text span, 
 .link {
-  color: var(--color-blue);
+  color: #4D81E7;
   cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 5px;
 }
 
+/* FORMULÁRIO */
 form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
 }
 
+/* INPUTS (CAMPO DE TEXTO) */
 input {
-  width: 250px;
-  padding: 12px;
-  border-radius: 6px;
-  border: none;
-  outline: none;
+  width: 100%; /* Ocupa a largura total do pai (auth-box) */
+  padding: 14px;
+  border-radius: 8px;
+  
+  /* ESTILO DARK MODE */
+  background-color: #161626 !important; /* !important força a cor */
+  border: 1px solid #2E2E3A;
+  color: white;
+  
   font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  outline: none;
 }
 
+input:focus {
+  border-color: #4D81E7;
+}
+
+/* BOTÃO (Alvo direto para garantir que funcione) */
+button, 
 .auth-btn {
-  width: 250px;
-  padding: 12px;
-  border-radius: 6px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
   border: none;
-  background: #1D61E7;
+  
+  /* COR DE FUNDO AZUL */
+  background-color: #1D61E7 !important; /* Força o azul */
   color: white;
+  
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
   cursor: pointer;
   margin-top: 10px;
-  font-size: 15px;
 }
 
+button:hover, 
 .auth-btn:hover {
-  background: #2e53d4;
+  background-color: #1545b3 !important;
 }

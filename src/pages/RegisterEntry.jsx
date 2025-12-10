@@ -12,7 +12,7 @@ export default function RegisterEntry() {
 
         <input type="text" placeholder="Placa" className="input" />
 
-        <button className="yellow-btn" onClick={() => navigate("/active-cars")} style={{ marginTop: "10px" }}>
+        <button className="yellow-btn" onClick={() => navigate("/active-cars")}>
           Registrar Entrada
         </button>
 
