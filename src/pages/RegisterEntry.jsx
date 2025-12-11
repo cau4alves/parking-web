@@ -11,7 +11,6 @@ export default function RegisterEntry() {
     if (!placa) return alert("Digite a placa!");
 
     try {
-      // Ajuste a URL e o objeto conforme seu Backend espera
       await api.post("/api/veiculos/entrada", { placa: placa });
       
       alert("Entrada registrada com sucesso!");

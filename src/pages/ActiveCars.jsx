@@ -7,11 +7,9 @@ export default function ActiveCars() {
   const navigate = useNavigate();
   const [veiculos, setVeiculos] = useState([]);
 
-  // Busca os dados assim que o componente é montado
   useEffect(() => {
     async function loadCars() {
       try {
-        // Ajuste a URL conforme seu Controller (ex: /veiculos ou /veiculos/ativos)
         const response = await api.get("/api/veiculos"); 
         setVeiculos(response.data);
       } catch (error) {
@@ -31,7 +29,6 @@ export default function ActiveCars() {
         
         <h2>Carros ativos</h2>
 
-        {/* Mapeia a lista de veículos vinda do banco */}
         <div className="cars-list" style={{ maxHeight: "300px", overflowY: "auto", width: "100%" }}>
           {veiculos.length === 0 ? (
             <p style={{textAlign: "center", color: "#666"}}>Nenhum veículo estacionado.</p>
