@@ -1,14 +1,12 @@
-/* RESET BÁSICO */
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Garanta que NÃO tenha vírgula aqui */
+  box-sizing: border-box; 
 }
 
 body {
-  /* Fundo escuro global */
   background-color: #0D0D1B;
-  /* Fonte forçada para Inter ou qualquer sans-serif */
   font-family: 'Inter', sans-serif;
   color: white;
   height: 100vh;
@@ -17,7 +15,6 @@ body {
   justify-content: center;
 }
 
-/* CONTAINER DO LOGIN */
 .auth-box {
   width: 100%;
   max-width: 350px;
@@ -25,15 +22,17 @@ body {
   padding: 20px;
 }
 
-/* TÍTULOS */
+.auth-container {
+  width: 450px;
+}
+
 h2 {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 8px;
-  font-family: 'Inter', sans-serif; /* Forçando a fonte no título */
+  font-family: 'Inter', sans-serif;
 }
 
-/* TEXTO "Don't have an account?" */
 .switch-text {
   color: #cccccc;
   font-size: 14px;
@@ -49,7 +48,6 @@ h2 {
   margin-left: 5px;
 }
 
-/* FORMULÁRIO */
 form {
   display: flex;
   flex-direction: column;
@@ -58,14 +56,12 @@ form {
   width: 100%;
 }
 
-/* INPUTS (CAMPO DE TEXTO) */
 input {
-  width: 100%; /* Ocupa a largura total do pai (auth-box) */
+  width: 100%;
   padding: 14px;
   border-radius: 8px;
   
-  /* ESTILO DARK MODE */
-  background-color: #161626 !important; /* !important força a cor */
+  background-color: #161626 !important;
   border: 1px solid #2E2E3A;
   color: white;
   
@@ -78,7 +74,6 @@ input:focus {
   border-color: #4D81E7;
 }
 
-/* BOTÃO (Alvo direto para garantir que funcione) */
 button, 
 .auth-btn {
   width: 100%;
@@ -86,8 +81,7 @@ button,
   border-radius: 8px;
   border: none;
   
-  /* COR DE FUNDO AZUL */
-  background-color: #1D61E7 !important; /* Força o azul */
+  background-color: #1D61E7 !important;
   color: white;
   
   font-size: 16px;

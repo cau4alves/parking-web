@@ -1,10 +1,9 @@
 .screen-container {
   width: 100vw;
-  height: 100vh;
-  background: #0d0d1e;
+  background: #0D0D1B;
   display: flex;
-  align-items: center;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .screen-box {
@@ -17,7 +16,7 @@ h2 {
 }
 
 .input {
-  width: 260px;
+  width: 350px;
   padding: 12px;
   border-radius: 6px;
   border: none;
@@ -26,12 +25,14 @@ h2 {
 }
 
 .car-card {
-  width: 260px;
+  width: 350px;
+  height: 80px;
   background: #fff;
   padding: 10px;
   border-radius: 6px;
   text-align: left;
   margin: 10px auto;
+  color: black;
 }
 
 .btn-row {
@@ -41,15 +42,32 @@ h2 {
   margin-top: 20px;
 }
 
-.yellow-btn {
-  background: #f5d469;
+.screen-box .yellow-btn {
+  background-color: #FEDD66 !important;
   border: none;
   padding: 10px 20px;
   border-radius: 6px;
   cursor: pointer;
   font-size: 15px;
+  color: black;
 }
 
-.yellow-btn:hover {
-  background: #eac55c;
+.screen-box .yellow-btn:hover {
+  background-color: #eac55c !important;
+}
+
+.input-all {
+  display: flex;
+  width: 350px;
+  height: 400px;
+  flex-direction: column;
+}
+
+.cars-list::-webkit-scrollbar {
+  display: none;
+}
+
+.cars-list {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }

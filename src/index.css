@@ -13,8 +13,3 @@
   --font-family-title: "Inter", sans-serif;
 }
 
-body {
-  background-color: var(--color-dark);
-  font-family: var(--font-family-title); 
-  -webkit-font-smoothing: antialiased;
-}
